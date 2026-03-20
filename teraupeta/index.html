@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gracielen | Terapeuta e Mentora</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Gracielen</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#agendamento" class="cta">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero semelhante ao modelo enviado: divisão com duas cores e foto centralizada à direita -->
+    <section class="hero split-hero">
+      <div class="split left">
+        <div class="container">
+          <h2>Terapeuta e Mentora dedicada ao seu bem-estar</h2>
+          <p class="lead">Sou a Gracielen — terapeuta e mentora. Trabalho com atendimentos individuais e programas de mentoria para quem busca equilíbrio emocional, clareza e progresso pessoal e profissional.</p>
+          <div class="cta-row">
+            <button class="btn primary" id="openBooking">Agendar sessão</button>
+            <a class="btn outline" href="#servicos">Saber mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="split right">
+        <div class="photo-wrap">
+          <!-- Imagem da Gracielen: substitua por um PNG com fundo removido para melhor resultado -->
+          <img id="profilePhoto" src="img.jpeg" alt="Gracielen" class="photo-cutout">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="container sobre">
+      <h3>Sobre a Gracielen</h3>
+      <p>Gracielen é terapeuta com formação em psicologia/terapias integrativas (substitua pela formação real). Atua com atendimentos individuais focados em autorregulação emocional, enfrentamento de ansiedade, luto, transições de vida e desenvolvimento de habilidades interpessoais. Também oferece programas de mentoria para profissionais que desejam alinhar carreira e bem-estar.</p>
+    </section>
+
+    <section id="servicos" class="container servicos">
+      <h3>Serviços</h3>
+      <ul>
+        <li><strong>Atendimento Terapêutico Individual:</strong> Sessões de 50 minutos para trabalho sobre emoções, padrões e estratégias práticas de mudança.</li>
+        <li><strong>Mentoria:</strong> Programas estruturados para autoconhecimento, planejamento de objetivos e desenvolvimento de habilidades emocionais e de liderança.</li>
+        <li><strong>Sessão Tira-dúvidas (Grátis):</strong> Um encontro curto para esclarecer dúvidas iniciais e conhecer o estilo de atendimento — ideal para quem quer experimentar antes de iniciar um processo terapêutico.</li>
+      </ul>
+    </section>
+
+    <section id="agendamento" class="container agendamento">
+      <h3>Agende uma sessão</h3>
+      <p>Preencha o formulário abaixo com sua disponibilidade. Ao enviar, será aberto um e-mail pronto para envio (sem necessidade de servidor). Se preferir, substitua o e-mail no arquivo <code>script.js</code> pelo contato real.</p>
+      <form id="bookingForm" class="form">
+        <label>Nome completo <input type="text" name="name" id="name" required></label>
+        <label>E-mail <input type="email" name="email" id="email" required></label>
+        <label>Tipo de sessão
+          <select name="session" id="session">
+            <option value="Tira-dúvidas (Grátis)">Tira-dúvidas (Grátis)</option>
+            <option value="Sessão Terapêutica (50 min)">Sessão Terapêutica (50 min)</option>
+            <option value="Mentoria (pacote)">Mentoria (pacote)</option>
+          </select>
+        </label>
+        <label>Preferência de data/hora <input type="text" name="datetime" id="datetime" placeholder="Ex: 10/01/2026 - manhã"></label>
+        <label>Mensagem (opcional) <textarea name="message" id="message" rows="4"></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar solicitação</button>
+          <button type="button" class="btn outline" id="clearForm">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gracielen — Terapeuta & Mentora</p>
+      <p>Contato: <a href="mailto:contato@gracielen.com.br">contato@gracielen.com.br</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
