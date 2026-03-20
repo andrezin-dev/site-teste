@@ -1,0 +1,40 @@
+/* Estilo simples e profissional para a landing */
+:root{--bg:#f7f8fb;--card:#ffffff;--primary:#2a6f9e;--accent:#f4a261;--muted:#6b7280;--radius:10px}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+.container{max-width:1000px;margin:0 auto;padding:2rem}
+.site-header{background:linear-gradient(90deg,var(--card),#fff);box-shadow:0 1px 6px rgba(2,6,23,0.06)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem}
+.brand{font-size:1.3rem;margin:0;color:var(--primary)}
+nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+nav a.cta{background:var(--primary);color:#fff;padding:0.45rem 0.8rem;border-radius:6px}
+.hero{padding:3rem 0}
+.split-hero{display:flex;min-height:380px}
+.split{flex:1;display:flex;align-items:center}
+.split.left{background:linear-gradient(180deg,#1f2b49,#2b3760);color:#fff;padding:3rem}
+.split.right{background:linear-gradient(90deg,#f05a28,#f18f4b);justify-content:center}
+.split .container{max-width:560px}
+.lead{color:var(--muted);line-height:1.6}
+.photo-wrap{display:flex;align-items:center;justify-content:center;width:100%;padding:2rem}
+.photo-cutout{width:320px;height:320px;object-fit:cover;border-radius:18px;box-shadow:0 20px 40px rgba(2,6,23,0.25);background:#fff}
+/* If the image has transparency (PNG with background removed), transparent areas will show the gradient behind it */
+.photo-cutout.transparent{background:transparent}
+.cta-row{margin-top:1rem}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+.btn.primary{background:var(--primary);color:#fff}
+.btn.outline{background:transparent;border:1px solid var(--primary);color:var(--primary)}
+.container h3{margin-top:0}
+.sobre p, .servicos ul{color:var(--muted)}
+.servicos ul{padding-left:1.25rem}
+.agendamento .form{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(20,30,60,0.06)}
+.form label{display:block;margin-bottom:0.75rem;color:#0b1220}
+.form input[type=text], .form input[type=email], .form select, .form textarea{width:100%;padding:0.6rem;border:1px solid #e6eef6;border-radius:6px;margin-top:0.5rem}
+.form-actions{display:flex;gap:0.5rem;margin-top:0.75rem}
+.site-footer{padding:1.5rem 0;color:var(--muted);font-size:0.95rem}
+.site-footer a{color:var(--primary);text-decoration:none}
+@media (max-width:820px){.hero-inner{flex-direction:column}.hero-photo{width:100%}.site-header .container{flex-direction:column;gap:0.75rem}.container{padding:1rem}}
+@media (max-width:960px){
+	.split-hero{flex-direction:column}
+	.split.left,.split.right{padding:2rem}
+	.photo-cutout{width:220px;height:220px}
+}
